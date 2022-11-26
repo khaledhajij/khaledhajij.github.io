@@ -8,7 +8,7 @@ const About = () => {
     <li className="skill">{skill.toUpperCase()}</li>
   ));
   const renderedCertifications = myCertifications.map((cert) => (
-    <a href={cert.url} target='_blank'>
+    <a href={cert.url} target='_blank' rel="noreferrer">
       <li className="skill">
         {cert.name} <FontAwesomeIcon icon={faMeta} />
       </li>
