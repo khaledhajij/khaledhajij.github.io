@@ -13,7 +13,8 @@ const Project = (props) => {
             "Lorem ipsum dolor sit amet consectetur, adipisicing elit."}
         </p>
         <p>
-          Made with love using: 
+          Made with love using:
+          <br/> 
           {props.tools || " HTML CSS JS"}
         </p>
         <button className="btn primary-btn">

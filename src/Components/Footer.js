@@ -1,9 +1,8 @@
 import {
   faGithub,
-  faInstagram,
   faLinkedin,
-  faTwitter,
-  faYoutube,
+  faTelegram,
+  faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
@@ -18,21 +17,26 @@ const Footer = () => {
         </div>
         <div className="socail">
           <p>SOCIAL</p>
-          <ul>
+          <ul className="socail-list">
             <li>
-              <FontAwesomeIcon icon={faTwitter} />
+              <a href="https://www.linkedin.com/in/khaled-hajij-40872222a">
+                <FontAwesomeIcon icon={faLinkedin} />
+              </a>
             </li>
             <li>
-              <FontAwesomeIcon icon={faLinkedin} />
+              <a href="https://wa.me/963938825058">
+                <FontAwesomeIcon icon={faWhatsapp} />
+              </a>
             </li>
             <li>
-              <FontAwesomeIcon icon={faYoutube} />
+              <a href="https://t.me/Khaled_Hajij">
+                <FontAwesomeIcon icon={faTelegram} />
+              </a>
             </li>
             <li>
-              <FontAwesomeIcon icon={faInstagram} />
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faGithub} />
+              <a href="https://github.com/khaledhajij">
+                <FontAwesomeIcon icon={faGithub} />
+              </a>
             </li>
           </ul>
         </div>

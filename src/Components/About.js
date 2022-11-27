@@ -27,10 +27,9 @@ const About = () => {
           <div className="my-certifications">
             <h3>My Certifications</h3>
             <p>
-              Certified by META, Coursera and other well-known institutions. Click on the
+              Certified by META, Coursera and other well-known institutions.<br/> Click on the
               following items to verify
             </p>
-
             <ul className="my-certfications">{renderedCertifications}</ul>
           </div>
         </div>

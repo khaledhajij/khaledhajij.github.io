@@ -9,7 +9,7 @@ const sectionsData = {
   },
   contact: {
     h2: "contact",
-    p: "I am interested in intership and freelancing oppurtunities. However, if you have other requests or questions, don't hesitate to use the form. You can also send me an email at hajij94@gmail.com or call me directly at +963 9388 250 58",
+    p: "I am interested in intership and freelancing oppurtunities. However, if you have other requests or questions. You can also send me an email at hajij94@gmail.com or call me directly at +963 9388 250 58",
   },
 };
 const projcetsData = [
