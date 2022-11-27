@@ -1,7 +1,6 @@
 import React from 'react'
 import Section from './ReusableComponents/Section'
 import { sectionsData } from "../data";
-import Form from './ReusableComponents/Form';
 
 const Contact = () => {
   return (
