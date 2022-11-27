@@ -10,7 +10,18 @@ const Navbar = () => {
   const ulElements = ["home", "projects", "about", "contact"];
   const ulRendered = ulElements.map((li) => (
     <li>
-      <a href={"#" + li}>{li.toUpperCase()}</a>
+      <a
+        href={"#" + li}
+        onClick={
+          !windowWidth
+            ? () => {
+                setShowList(false);
+              }
+            : null
+        }
+      >
+        {li.toUpperCase()}
+      </a>
     </li>
   ));
   useEffect(() => {

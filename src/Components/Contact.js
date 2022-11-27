@@ -8,7 +8,6 @@ const Contact = () => {
     <div className='Contact'>
         <div className="myContainer">
             <Section h2={sectionsData.contact.h2} p={sectionsData.contact.p.toLowerCase()} />
-            <Form/>
         </div>
     </div>
   )

@@ -27,8 +27,8 @@
   margin-right: 0px;
 }
 
-* {
-  transition-duration: 0s !important;
+*:not(.Home .myContainer h1, .Home .myContainer p) {
+  transition-duration: 0.2s !important;
 }
 
 a {
@@ -294,6 +294,11 @@ body button.btn:hover {
   display: flex;
   flex-direction: column;
   gap: 40px;
+}
+@media (max-width: 1000px) {
+  .About .myContainer {
+    margin-bottom: 0px;
+  }
 }
 .About .myContainer .qualifiers {
   display: flex;

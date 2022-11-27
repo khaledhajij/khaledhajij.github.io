@@ -24,8 +24,8 @@
   margin-left: 0px;
   margin-right: 0px;
 }
-* {
-  transition-duration: 0s !important;
+*:not(.Home .myContainer h1, .Home .myContainer p) {
+  transition-duration: .2s !important;
 }
 a {
   text-decoration: none;
@@ -286,6 +286,9 @@ body {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    @media (max-width:1000px) {
+      margin-bottom: 0px;
+    }
     .qualifiers {
       display: flex;
       justify-content: space-evenly;
