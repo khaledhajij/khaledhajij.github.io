@@ -320,9 +320,6 @@ body button.btn:hover {
   }
 }
 
-.About {
-  height: 100vh;
-}
 .About .myContainer {
   display: flex;
   flex-direction: column;
