@@ -126,7 +126,7 @@ body {
     }
     ul {
       font-weight: 600;
-      @media (max-width: 750px) {
+      @media (max-width: 1000px) {
         &.showList {
           display: flex !important;
           flex-direction: column;

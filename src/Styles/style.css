@@ -139,7 +139,7 @@ body button.btn:hover {
 .Navbar .myContainer ul {
   font-weight: 600;
 }
-@media (max-width: 750px) {
+@media (max-width: 1000px) {
   .Navbar .myContainer ul.showList {
     display: flex !important;
     flex-direction: column;
