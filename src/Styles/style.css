@@ -210,9 +210,31 @@ body button.btn:hover {
   height: 500px;
   background-color: var(--pattern-primary-color);
   opacity: 1;
-  background-image: radial-gradient(var(--secondary-color) 2px, transparent 2px), radial-gradient(var(--secondary-color) 2px, var(--pattern-primary-color) 2px);
+  background-image: radial-gradient(var(--secondary-color) 2px, transparent 2px), radial-gradient(var(--secondary-color) 2.5px, var(--pattern-primary-color) 2px);
   background-size: 80px 80px;
-  background-position: 0 0, 40px 40px;
+  animation: background-image 20s infinite alternate-reverse forwards ease-in-out;
+}
+@-webkit-keyframes background-image {
+  0% {
+    background-position: 10 10, 40px 45px;
+  }
+  50% {
+    background-position: 0 80px, 120px 45px;
+  }
+  50% {
+    background-position: 0 80px, -40px -45px;
+  }
+}
+@keyframes background-image {
+  0% {
+    background-position: 10 10, 40px 45px;
+  }
+  50% {
+    background-position: 0 80px, 120px 45px;
+  }
+  50% {
+    background-position: 0 80px, -40px -45px;
+  }
 }
 .Home .myContainer {
   display: flex;
