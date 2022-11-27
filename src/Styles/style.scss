@@ -218,11 +218,11 @@ body {
       50%{
         background-position: 0 80px, 120px 45px;
       }
-      100%{
+      50%{
         background-position: 0 80px, -40px -45px;
       }
     }
-    animation:background-image 50s infinite alternate-reverse forwards ease-in-out ;
+    animation:background-image 20s infinite alternate forwards ease-in-out ;
   .myContainer {
     display: flex;
     align-items: center;
@@ -300,6 +300,7 @@ body {
   }
 }
 .About {
+  height: 100vh;
   .myContainer {
     display: flex;
     flex-direction: column;
