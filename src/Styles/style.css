@@ -66,6 +66,11 @@ body button.btn:hover {
 .myContainer .Section p {
   width: 55%;
 }
+@media (max-width: 750px) {
+  .myContainer .Section p {
+    width: auto;
+  }
+}
 .myContainer .Section h2 {
   position: relative;
 }
@@ -90,7 +95,9 @@ body button.btn:hover {
   box-shadow: 0px -75px 100px 0px var(--secondary-color);
 }
 .Navbar svg.svg-inline--fa.fa-bars {
+  cursor: pointer;
   display: none;
+  color: var(--secondary-color);
 }
 .Navbar .mod-toggler {
   position: absolute;
@@ -120,10 +127,29 @@ body button.btn:hover {
 }
 .Navbar .myContainer .profile img {
   width: 50px;
+  height: 50px;
   border-radius: 50%;
+}
+@media (max-width: 750px) {
+  .Navbar .myContainer .profile img {
+    width: 30px;
+    height: 30px;
+  }
 }
 .Navbar .myContainer ul {
   font-weight: 600;
+}
+@media (max-width: 750px) {
+  .Navbar .myContainer ul.showList {
+    display: flex !important;
+    flex-direction: column;
+    position: absolute;
+    background-color: var(--primary-font-color);
+    right: 0px;
+    height: 100vh;
+    padding: 10px 25vw 0px 20px;
+    align-items: flex-start;
+  }
 }
 .Navbar .myContainer ul li {
   list-style: none;
@@ -216,17 +242,7 @@ body button.btn:hover {
     width: 50%;
   }
 }
-.Project:nth-of-type(odd) {
-  flex-direction: row-reverse;
-}
-.Project:nth-of-type(odd) .description {
-  padding-left: 0px;
-}
-.Project:nth-of-type(odd) .img-container {
-  border-radius: 0px 30px 30px 0px;
-}
 .Project .img-container {
-  border-radius: 30px 0px 0px 30px;
   background-color: var(--secondary-color);
   height: 250px;
 }
@@ -234,11 +250,25 @@ body button.btn:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   width: 50%;
   gap: 25px;
   padding: 0px 50px;
   padding-right: 50px;
+}
+.Project .description button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.Project .description h3::first-letter {
+  text-transform: uppercase;
+}
+@media (max-width: 750px) {
+  .Project .description {
+    width: 100%;
+    align-items: center;
+    gap: 7px;
+  }
 }
 @media (max-width: 750px) {
   .Project {
@@ -269,12 +299,33 @@ body button.btn:hover {
   display: flex;
   justify-content: space-evenly;
 }
+@media (max-width: 750px) {
+  .About .myContainer .qualifiers {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .About .myContainer .qualifiers > div {
+    width: auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .About .myContainer .qualifiers > div ul {
+    justify-content: center;
+    gap: 5px;
+  }
+}
 .About .myContainer .qualifiers > div {
   width: 30%;
   gap: dis;
   display: flex;
   flex-direction: column;
   gap: 25px;
+}
+@media (max-width: 750px) {
+  .About .myContainer .qualifiers > div {
+    width: auto;
+  }
 }
 .About .myContainer .qualifiers > div.my-skills ul {
   width: 60%;
@@ -353,6 +404,7 @@ body button.btn:hover {
 
 .Footer {
   background-color: var(--secondary-color);
+  padding-top: 20px;
   height: 200px;
   font-size: 20px;
 }
@@ -365,6 +417,23 @@ body button.btn:hover {
   justify-content: space-between;
   height: 100%;
   align-items: center;
+}
+@media (max-width: 750px) {
+  .Footer .myContainer {
+    gap: 15px;
+    flex-direction: column;
+    text-align: center;
+  }
+  .Footer .myContainer .info,
+.Footer .myContainer .socail {
+    gap: 10px !important;
+  }
+  .Footer .myContainer .name {
+    font-size: 20px !important;
+  }
+  .Footer .myContainer p {
+    font-size: 16px !important;
+  }
 }
 .Footer .myContainer .info {
   height: 100%;

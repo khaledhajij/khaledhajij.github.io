@@ -10,7 +10,7 @@ const Project = (props) => {
         <h3>{props.title || "project title"}</h3>
         <p>
           {props.description ||
-            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa in inventore quasi! Dicta odio quidem repellendus"}
+            "Lorem ipsum dolor sit amet consectetur, adipisicing elit."}
         </p>
         <p>
           Made with love using: 

@@ -55,8 +55,11 @@ body {
     text-align: center;
     align-items: center;
     gap: 20px;
-    p{
+    p {
       width: 55%;
+      @media (max-width: 750px) {
+        width: auto;
+      }
     }
     h2 {
       position: relative;
@@ -77,10 +80,12 @@ body {
 // Navber
 .Navbar {
   z-index: 1;
-  svg.svg-inline--fa.fa-bars{
+  svg.svg-inline--fa.fa-bars {
+    cursor: pointer;
     display: none;
+    color: var(--secondary-color);
   }
-  .mod-toggler{
+  .mod-toggler {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -111,11 +116,28 @@ body {
       font-weight: 600;
       img {
         width: 50px;
+        height: 50px;
         border-radius: 50%;
+        @media (max-width: 750px) {
+          width: 30px;
+          height: 30px;
+        }
       }
     }
     ul {
       font-weight: 600;
+      @media (max-width: 750px) {
+        &.showList {
+          display: flex !important;
+          flex-direction: column;
+          position: absolute;
+          background-color: var(--primary-font-color);
+          right: 0px;
+          height: 100vh;
+          padding: 10px 25vw 0px 20px;
+          align-items: flex-start;
+        }
+      }
       li {
         list-style: none;
         a {
@@ -124,8 +146,8 @@ body {
         }
       }
     }
-    @media (max-width:550px) {
-      .name{
+    @media (max-width: 550px) {
+      .name {
         display: none;
       }
     }
@@ -206,18 +228,9 @@ body {
   }
 }
 .Project {
-  @media (min-width:750px) {
+  @media (min-width: 750px) {
     & > * {
       width: 50%;
-    }
-  }
-  &:nth-of-type(odd) {
-    flex-direction: row-reverse;
-    .description {
-      padding-left: 0px;
-    }
-    .img-container {
-      border-radius: 0px 30px 30px 0px;
     }
   }
   display: flex;
@@ -227,7 +240,6 @@ body {
   margin-top: 50px;
   margin-bottom: 50px;
   .img-container {
-    border-radius: 30px 0px 0px 30px;
     background-color: var(--secondary-color);
     height: 250px;
   }
@@ -235,25 +247,35 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     width: 50%;
     gap: 25px;
     padding: 0px 50px;
     padding-right: 50px;
+    button {
+      width: fit-content;
+    }
+    h3::first-letter {
+      text-transform: uppercase;
+    }
+    @media (max-width: 750px) {
+      width: 100%;
+      align-items: center;
+      gap: 7px;
+    }
   }
-  @media (max-width:750px) {
+  @media (max-width: 750px) {
     text-align: center;
     flex-direction: column;
-    .img-container{
+    .img-container {
       border-radius: 0px;
       width: 95%;
     }
-    &:nth-of-type(odd){
+    &:nth-of-type(odd) {
       flex-direction: column;
-      .img-container{
+      .img-container {
         border-radius: 0px;
       }
-      .description{
+      .description {
         padding-left: 50px;
       }
     }
@@ -267,12 +289,29 @@ body {
     .qualifiers {
       display: flex;
       justify-content: space-evenly;
+      @media (max-width: 750px) {
+        flex-wrap: wrap;
+        gap: 20px;
+        > div {
+          width: auto;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          ul {
+            justify-content: center;
+            gap: 5px;
+          }
+        }
+      }
       > div {
         width: 30%;
         gap: dis;
         display: flex;
         flex-direction: column;
         gap: 25px;
+        @media (max-width: 750px) {
+          width: auto;
+        }
         &.my-skills {
           ul {
             width: 60%;
@@ -356,6 +395,7 @@ body {
 }
 .Footer {
   background-color: var(--secondary-color);
+  padding-top: 20px;
   height: 200px;
   font-size: 20px;
   .myContainer {
@@ -367,6 +407,21 @@ body {
     justify-content: space-between;
     height: 100%;
     align-items: center;
+    @media (max-width: 750px) {
+      gap: 15px;
+      flex-direction: column;
+      text-align: center;
+      .info,
+      .socail {
+        gap: 10px !important;
+      }
+      .name {
+        font-size: 20px !important;
+      }
+      p {
+        font-size: 16px !important;
+      }
+    }
     .info {
       height: 100%;
       display: flex;
@@ -408,12 +463,12 @@ label,
 a {
   color: var(--secondary-font-color);
 }
-@media (max-width:1000px) {
-  .Navbar{
-    ul{
+@media (max-width: 1000px) {
+  .Navbar {
+    ul {
       display: none !important;
     }
-    svg.svg-inline--fa.fa-bars{
+    svg.svg-inline--fa.fa-bars {
       display: block;
     }
   }
