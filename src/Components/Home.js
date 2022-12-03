@@ -18,9 +18,16 @@ const Home = () => {
           I am a passionate frontend developer. I love building apps that are
           delightful to use.
         </p>
-        <button className="btn">
-          <a href="#projects">{"see my projects".toUpperCase()}</a>
-        </button>
+        <div className="buttons">
+          <button className="btn">
+            <a href="#projects">{"see my projects".toUpperCase()}</a>
+          </button>
+          <button className="btn">
+            <a href="https://pdfhost.io/v/mhd5atp5f_Light_Yellow_Blue_Bold_Modern_Salesperson_CV">
+              View my CV
+            </a>
+          </button>
+        </div>
         <ul className="socail-list firstOne">
           <li>
             <a href="https://www.linkedin.com/in/khaled-hajij-40872222a">

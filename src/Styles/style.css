@@ -252,10 +252,15 @@ body button.btn:hover {
   background-color: var(--pattern-primary-color);
   padding: 20px;
 }
-.Home .myContainer button {
+.Home .myContainer .buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.Home .myContainer .buttons button {
   width: 210px;
 }
-.Home .myContainer button a {
+.Home .myContainer .buttons button a {
   color: var(--pattern-primary-color);
 }
 
@@ -371,6 +376,7 @@ body button.btn:hover {
   align-items: center;
   padding: 0px;
   padding-left: 5px;
+  height: 35px;
 }
 .About .myContainer .qualifiers > div.my-certifications ul li svg {
   overflow: visible;
@@ -379,6 +385,8 @@ body button.btn:hover {
   font-size: 25px;
   border-radius: 0px 5px 5px 0px;
   padding: 5px;
+  -webkit-animation: color 2s infinite ease-in-out forwards alternate;
+          animation: color 2s infinite ease-in-out forwards alternate;
 }
 .About .myContainer .qualifiers ul {
   display: flex;
@@ -573,4 +581,22 @@ ul.socail-list li a {
 
 p {
   color: var(--secondary-font-color-light);
+}
+
+@-webkit-keyframes color {
+  0% {
+    font-weight: 400;
+  }
+  100% {
+    font-weight: 900;
+  }
+}
+
+@keyframes color {
+  0% {
+    font-weight: 400;
+  }
+  100% {
+    font-weight: 900;
+  }
 }/*# sourceMappingURL=style.css.map */

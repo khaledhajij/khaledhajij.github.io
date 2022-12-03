@@ -6,13 +6,14 @@ import { faFreeCodeCamp, faMeta } from "@fortawesome/free-brands-svg-icons";
 const About = () => {
   const renderedSkills = mySkills.map((skill) => (
     <li className="skill">{skill.toUpperCase()}</li>
-  ));
-  const renderedCertifications = myCertifications.map((cert) => (
+    ));
+    const renderedCertifications = myCertifications.map((cert) => (
     <a href={cert.url} target="_blank" rel="noreferrer">
       <li className="skill">
         {cert.name}{" "}
         <FontAwesomeIcon
-          icon={cert.Teacher === "Meta" ? faMeta : faFreeCodeCamp}
+          icon={cert.Teacher === "FreeCodeCamp" ? faFreeCodeCamp : faMeta}
+          style={cert.Teacher === "FreeCodeCamp" ? {backgroundColor:'tomato'} : null}
         />
       </li>
     </a>

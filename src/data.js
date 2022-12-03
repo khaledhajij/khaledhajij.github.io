@@ -80,14 +80,6 @@ const myCertifications = [
     website: "coursera",
   },
   {
-    name: "Principles of UX/UI Design",
-    date: "Nov 21 2022",
-    url: "https://www.coursera.org/account/accomplishments/certificate/YD9DYCFA8Y4J",
-    img: "",
-    Teacher: " Meta",
-    website: "coursera",
-  },
-  {
     name: "React Advanced",
     date: "Dec 2 2022",
     url: "https://www.coursera.org/account/accomplishments/certificate/GZBBQ4RKL3XN",
@@ -96,7 +88,15 @@ const myCertifications = [
     website: "coursera",
   },
   {
-    name: "JavaScript Algorithms and Data Structures",
+    name: "Principles of UX/UI Design",
+    date: "Nov 21 2022",
+    url: "https://www.coursera.org/account/accomplishments/certificate/YD9DYCFA8Y4J",
+    img: "",
+    Teacher: " Meta",
+    website: "coursera",
+  },
+  {
+    name: "JS Algorithms & Data Structures",
     date: "June 24 2022",
     url: "https://www.freecodecamp.org/certification/Khaled_Hajij/javascript-algorithms-and-data-structures",
     img: "",
