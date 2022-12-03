@@ -260,6 +260,9 @@ body button.btn:hover {
 .Home .myContainer .buttons button {
   width: 210px;
 }
+.Home .myContainer .buttons button:active {
+  background-color: var(--secondary-color);
+}
 .Home .myContainer .buttons button a {
   color: var(--pattern-primary-color);
 }

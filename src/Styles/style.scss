@@ -243,6 +243,9 @@ body {
       gap: 15px;
       button {
         width: 210px;
+        &:active{
+          background-color: var(--secondary-color);
+        }
         a {
           color: var(--pattern-primary-color);
         }
