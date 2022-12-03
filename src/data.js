@@ -87,5 +87,13 @@ const myCertifications = [
     Teacher: " Meta",
     website: "coursera",
   },
+  {
+    name: "React Advanced",
+    date: "Dec 2 2022",
+    url: "https://www.coursera.org/account/accomplishments/certificate/GZBBQ4RKL3XN",
+    img: "",
+    Teacher: " Meta",
+    website: "coursera",
+  },
 ];
 export { sectionsData, projcetsData, mySkills, myCertifications };
