@@ -23,7 +23,7 @@ const Home = () => {
             <a href="#projects">{"see my projects".toUpperCase()}</a>
           </button>
           <button className="btn">
-            <a href="https://pdfhost.io/v/mhd5atp5f_Light_Yellow_Blue_Bold_Modern_Salesperson_CV">
+            <a href="https://drive.google.com/file/d/146k05dHOYch6lqAImthK3ePtbOmUhf_0/view" target='_blank'>
               View my CV
             </a>
           </button>
