@@ -95,5 +95,13 @@ const myCertifications = [
     Teacher: " Meta",
     website: "coursera",
   },
+  {
+    name: "JavaScript Algorithms and Data Structures",
+    date: "June 24 2022",
+    url: "https://www.freecodecamp.org/certification/Khaled_Hajij/javascript-algorithms-and-data-structures",
+    img: "",
+    Teacher: "FreeCodeCamp",
+    website: "FreeCodeCamp",
+  },
 ];
 export { sectionsData, projcetsData, mySkills, myCertifications };

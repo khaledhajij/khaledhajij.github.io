@@ -2,15 +2,18 @@ import React from "react";
 import Section from "./ReusableComponents/Section";
 import { sectionsData, myCertifications, mySkills } from "../data";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMeta } from "@fortawesome/free-brands-svg-icons";
+import { faFreeCodeCamp, faMeta } from "@fortawesome/free-brands-svg-icons";
 const About = () => {
   const renderedSkills = mySkills.map((skill) => (
     <li className="skill">{skill.toUpperCase()}</li>
   ));
   const renderedCertifications = myCertifications.map((cert) => (
-    <a href={cert.url} target='_blank' rel="noreferrer">
+    <a href={cert.url} target="_blank" rel="noreferrer">
       <li className="skill">
-        {cert.name} <FontAwesomeIcon icon={faMeta} />
+        {cert.name}{" "}
+        <FontAwesomeIcon
+          icon={cert.Teacher === "Meta" ? faMeta : faFreeCodeCamp}
+        />
       </li>
     </a>
   ));
@@ -27,8 +30,8 @@ const About = () => {
           <div className="my-certifications">
             <h3>My Certifications</h3>
             <p>
-              Certified by META, Coursera and other well-known institutions.<br/> Click on the
-              following items to verify
+              Certified by META, Coursera and other well-known institutions.
+              <br /> Click on the following items to verify
             </p>
             <ul className="my-certfications">{renderedCertifications}</ul>
           </div>
